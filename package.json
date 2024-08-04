@@ -5,10 +5,17 @@
   "author": "Bruno Kiafuka <brunokiafuka@live.com.pt>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "preinstall": "bash ./bin/volta.sh"
+  },
   "workspaces": {
     "packages": [
       "apps/*",
       "packages/*"
     ]
+  },
+  "volta": {
+    "node": "20.12.2",
+    "yarn": "4.4.0"
   }
 }
